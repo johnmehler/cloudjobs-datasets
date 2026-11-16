@@ -1,0 +1,22 @@
+technology,job_count,jobs_with_salary,avg_salary_usd,in_filter_catalog
+Python,6902,3521,190677,true
+AWS,5225,2769,196645,true
+Kubernetes,4340,2288,201444,true
+Azure,3687,1843,193310,true
+Linux,3414,1607,172129,true
+GCP,2807,1500,206012,true
+Terraform,2416,1332,195265,true
+Java,2376,1149,190774,true
+Docker,2361,1203,186364,true
+SQL,2312,1200,184616,true
+Bash,1420,720,165434,true
+JavaScript,1390,668,176971,true
+Git,1363,561,172610,true
+Ansible,1325,730,178169,true
+Jenkins,808,348,177277,true
+PowerShell,769,401,149119,true
+GitHub Actions,582,291,185068,true
+Cisco,566,323,147990,true
+Red Hat,277,167,152383,true
+Azure DevOps,268,103,156826,true
+Oracle Cloud,216,69,174400,true

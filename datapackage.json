@@ -1,0 +1,64 @@
+{
+  "name": "cloudjobs-open-datasets",
+  "title": "CloudJobs Open Datasets: Cloud Job Market Data",
+  "description": "Machine-readable datasets on the cloud computing job market, aggregated daily from CloudJobs — a live job board tracking cloud, DevOps, SRE, and platform-engineering roles across AWS, Azure, GCP, Kubernetes, and adjacent stacks.",
+  "homepage": "https://cloudjobs.io/datasets",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "keywords": ["cloud jobs", "devops", "salaries", "certifications", "aws", "azure", "gcp", "kubernetes", "job market", "hiring"],
+  "resources": [
+    {
+      "name": "market-overview",
+      "title": "Cloud Job Market Overview",
+      "path": "data/cloudjobs-market-overview.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Daily snapshot: total jobs, companies, median/avg salary, remote split."
+    },
+    {
+      "name": "certifications",
+      "title": "Certification Demand & Salaries",
+      "path": "data/cloudjobs-certifications.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Job count and average salary per certification (AWS, Azure, GCP, Kubernetes, CompTIA, CISSP)."
+    },
+    {
+      "name": "technologies",
+      "title": "Technology Demand & Salaries",
+      "path": "data/cloudjobs-technologies.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Job count and average salary per technology."
+    },
+    {
+      "name": "companies",
+      "title": "Hiring Companies & Salaries",
+      "path": "data/cloudjobs-companies.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Per-company role counts, remote/hybrid/onsite mix, salary min/median/max."
+    },
+    {
+      "name": "locations",
+      "title": "Job Locations & Salaries",
+      "path": "data/cloudjobs-locations.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Role counts and average salary by location."
+    },
+    {
+      "name": "jobs",
+      "title": "Live Job Postings",
+      "path": "data/cloudjobs-jobs.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Full live postings feed: title, company, location, remote flag, salary range, technologies, certifications, posted date, canonical URL."
+    }
+  ]
+}
