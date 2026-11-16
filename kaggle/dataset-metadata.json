@@ -2,7 +2,7 @@
   "title": "Cloud Job Market 2026 - Postings & Salaries",
   "id": "johnmehler/cloudjobs-cloud-job-market",
   "isPrivate": false,
-  "subtitle": "11k live cloud/DevOps job postings with normalized USD salaries, monthly snapshots",
+  "subtitle": "Live cloud/DevOps job postings with USD salaries, monthly snapshots",
   "description": "Open datasets on the cloud computing job market, aggregated from CloudJobs (https://cloudjobs.io) - a live job board tracking cloud, DevOps, SRE, and platform-engineering roles across AWS, Azure, GCP, Kubernetes, and adjacent stacks.\n\nDatasets included:\n- cloudjobs-market-overview.csv - point-in-time snapshot: total jobs, companies, median/avg salary, remote split\n- cloudjobs-certifications.csv - job count and average salary per certification (AWS, Azure, GCP, Kubernetes, CompTIA, CISSP)\n- cloudjobs-technologies.csv - job count and average salary per technology\n- cloudjobs-companies.csv - per-company role counts, remote/hybrid/onsite mix, salary min/median/max\n- cloudjobs-locations.csv - role counts and average salary by location\n- cloudjobs-jobs.csv - full live postings feed: title, company, location, remote flag, salary range, technologies, certifications, posted date, canonical URL\n\nThis is a point-in-time monthly snapshot (version history on Kaggle; immutable releases on GitHub). The live, always-current feed is at https://cloudjobs.io/datasets and releases are at https://github.com/johnmehler/cloudjobs-datasets/releases.\n\nMethodology: https://cloudjobs.io/methodology",
   "licenses": [
     {

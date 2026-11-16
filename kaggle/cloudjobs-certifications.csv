@@ -1,0 +1,49 @@
+cert_id,code,title,provider,in_catalog,job_count,jobs_with_salary,avg_salary_usd
+cissp,CISSP,CISSP - Certified Information Systems Security Professional,CISSP,true,529,351,166813
+security,SECURITY,SECURITY,,false,520,387,140910
+ccna,CCNA,CCNA - Cisco Certified Network Associate,Cisco,true,259,164,147104
+ccnp,CCNP,CCNP - Cisco Certified Network Professional,Cisco,true,235,134,155262
+a,A,A,,false,186,137,156670
+oscp,OSCP,OSCP - Offensive Security Certified Professional,Offensive Security,true,150,86,218847
+cka,CKA,CKA - Certified Kubernetes Administrator,Kubernetes,true,149,90,166305
+saac03,SAA-C03,SAA-C03 - AWS Certified Solutions Architect - Associate,AWS,true,106,70,159381
+cks,CKS,CKS - Certified Kubernetes Security Specialist,Kubernetes,true,103,62,192602
+sapc02,SAP-C02,SAP-C02 - AWS Certified Solutions Architect - Professional,AWS,true,97,67,164168
+scsc02,SCS-C02,SCS-C02 - AWS Certified Security - Specialty,AWS,true,96,62,176000
+az305,AZ-305,AZ-305 - Microsoft Certified: Azure Solutions Architect Expert,Azure,true,84,59,167536
+ceh,CEH,CEH - Certified Ethical Hacker,CEH,true,83,50,167587
+network,NETWORK,NETWORK,,false,82,51,137967
+cysa,CYSA,CYSA,,false,80,64,143977
+rhcsa,RHCSA,RHCSA - Red Hat Certified System Administrator,Red Hat,true,72,48,143583
+ckad,CKAD,CKAD - Certified Kubernetes Application Developer,Kubernetes,true,71,37,173503
+rhce,RHCE,RHCE - Red Hat Certified Engineer,Red Hat,true,60,38,153283
+itil4fnd,ITIL-4-FND,ITIL-4-FND - ITIL 4 Foundation,ITIL,true,59,36,143672
+casp,CASP,CASP,,false,57,52,153083
+az500,AZ-500,AZ-500 - Microsoft Certified: Azure Security Engineer Associate,Azure,true,55,26,178196
+az104,AZ-104,AZ-104 - Microsoft Certified: Azure Administrator Associate,Azure,true,51,35,129840
+gcppcse,GCP-PCSE,GCP-PCSE - Google Cloud Certified Professional Security Engineer,GCP,true,39,23,186951
+clfc02,CLF-C01,CLF-C01 - AWS Certified Cloud Practitioner,AWS,true,39,25,139684
+ansc01,ANS-C01,ANS-C01 - AWS Certified Expert Networking - Specialty,AWS,true,39,16,171120
+linux,LINUX,LINUX,,false,37,29,133508
+cloud,CLOUD,CLOUD,,false,31,26,137988
+soac02,SOA-C02,SOA-C02 - AWS Certified SysOps Administrator - Associate,AWS,true,29,24,150158
+ta003,TA003,TA003,,false,24,19,161736
+dopc02,DOP-C02,DOP-C02 - AWS Certified DevOps Engineer - Professional,AWS,true,23,17,167283
+az900,AZ-900,AZ-900 - Microsoft Certified: Azure Fundamentals,Azure,true,23,8,121019
+server,SERVER,SERVER,,false,18,13,125574
+dbsc01,DBS-C01,DBS-C01 - AWS Certified Database - Specialty,AWS,true,12,8,167875
+az400,AZ-400,AZ-400 - Microsoft Certified: DevOps Engineer Expert,Azure,true,11,6,158082
+focp,FOCP,FOCP - FinOps Certified Practitioner,FinOps,true,10,6,158333
+gcppca,GCP-PCA,GCP-PCA - Google Cloud Certified Professional Cloud Architect,GCP,true,8,5,215874
+dvac02,DVA-C02,DVA-C02 - AWS Certified Developer - Associate,AWS,true,8,3,141452
+dca,DCA,DCA - Docker Certified Associate,Docker,true,8,3,193154
+dp203,DP-203,DP-203 - Microsoft Certified: Azure Data Engineer Associate,Azure,true,7,3,163050
+az204,AZ-204,AZ-204 - Microsoft Certified: Azure Developer Associate,Azure,true,7,3,154475
+gcppcne,GCP-PCNE,GCP-PCNE - Google Cloud Certified Professional Network Engineer,GCP,true,4,4,157679
+gcppcdop,GCPPCDOP,GCPPCDOP,,false,2,1,261500
+dp300,DP-300,DP-300 - Microsoft Certified: Azure Database Administrator Associate,Azure,true,2,0,
+rhca,RHCA,RHCA - Red Hat Certified Architect,Red Hat,true,2,0,
+mlsc01,MLS-C01,MLS-C01 - AWS Certified Machine Learning - Specialty,AWS,true,2,0,
+gcppcml,GCP-PCML,GCP-PCML - Google Cloud Certified Professional Machine Learning Engineer,GCP,true,1,1,227650
+gcppcdb,GCP-PCDB,GCP-PCDB - Google Cloud Certified Professional Database Engineer,GCP,true,1,1,202500
+ai102,AI-102,AI-102 - Microsoft Certified: Azure AI Engineer Associate,Azure,true,1,0,
