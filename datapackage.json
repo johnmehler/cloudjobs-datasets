@@ -1,7 +1,7 @@
 {
   "name": "cloudjobs-open-datasets",
   "title": "CloudJobs Open Datasets: Cloud Job Market Data",
-  "description": "Machine-readable datasets on the cloud computing job market, aggregated daily from CloudJobs — a live job board tracking cloud, DevOps, SRE, and platform-engineering roles across AWS, Azure, GCP, Kubernetes, and adjacent stacks.",
+  "description": "Machine-readable datasets on the cloud computing job market, aggregated from CloudJobs \u2014 a live job board tracking cloud, DevOps, SRE, and platform-engineering roles across AWS, Azure, GCP, Kubernetes, and adjacent stacks. Published as immutable monthly snapshots (tag vYYYY.MM); the live feed is at https://cloudjobs.io/datasets.",
   "homepage": "https://cloudjobs.io/datasets",
   "licenses": [
     {
@@ -10,7 +10,18 @@
       "path": "https://creativecommons.org/licenses/by/4.0/"
     }
   ],
-  "keywords": ["cloud jobs", "devops", "salaries", "certifications", "aws", "azure", "gcp", "kubernetes", "job market", "hiring"],
+  "keywords": [
+    "cloud jobs",
+    "devops",
+    "salaries",
+    "certifications",
+    "aws",
+    "azure",
+    "gcp",
+    "kubernetes",
+    "job market",
+    "hiring"
+  ],
   "resources": [
     {
       "name": "market-overview",
@@ -18,7 +29,7 @@
       "path": "data/cloudjobs-market-overview.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "description": "Daily snapshot: total jobs, companies, median/avg salary, remote split."
+      "description": "Point-in-time snapshot: total jobs, companies, median/avg salary, remote split."
     },
     {
       "name": "certifications",
@@ -26,7 +37,7 @@
       "path": "data/cloudjobs-certifications.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "description": "Job count and average salary per certification (AWS, Azure, GCP, Kubernetes, CompTIA, CISSP)."
+      "description": "Job count and average salary per certification (AWS, Azure, GCP, Kubernetes, CompTIA, CISSP). Column in_catalog is false for raw free-text mentions that do not match a tracked certification."
     },
     {
       "name": "technologies",
@@ -60,5 +71,7 @@
       "mediatype": "text/csv",
       "description": "Full live postings feed: title, company, location, remote flag, salary range, technologies, certifications, posted date, canonical URL."
     }
-  ]
+  ],
+  "version": "2026.11",
+  "created": "2026-11-16"
 }

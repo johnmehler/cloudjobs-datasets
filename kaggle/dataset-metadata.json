@@ -1,0 +1,322 @@
+{
+  "title": "Cloud Job Market 2026 - Postings & Salaries",
+  "id": "johnmehler/cloudjobs-cloud-job-market",
+  "isPrivate": false,
+  "subtitle": "11k live cloud/DevOps job postings with normalized USD salaries, monthly snapshots",
+  "description": "Open datasets on the cloud computing job market, aggregated from CloudJobs (https://cloudjobs.io) - a live job board tracking cloud, DevOps, SRE, and platform-engineering roles across AWS, Azure, GCP, Kubernetes, and adjacent stacks.\n\nDatasets included:\n- cloudjobs-market-overview.csv - point-in-time snapshot: total jobs, companies, median/avg salary, remote split\n- cloudjobs-certifications.csv - job count and average salary per certification (AWS, Azure, GCP, Kubernetes, CompTIA, CISSP)\n- cloudjobs-technologies.csv - job count and average salary per technology\n- cloudjobs-companies.csv - per-company role counts, remote/hybrid/onsite mix, salary min/median/max\n- cloudjobs-locations.csv - role counts and average salary by location\n- cloudjobs-jobs.csv - full live postings feed: title, company, location, remote flag, salary range, technologies, certifications, posted date, canonical URL\n\nThis is a point-in-time monthly snapshot (version history on Kaggle; immutable releases on GitHub). The live, always-current feed is at https://cloudjobs.io/datasets and releases are at https://github.com/johnmehler/cloudjobs-datasets/releases.\n\nMethodology: https://cloudjobs.io/methodology",
+  "licenses": [
+    {
+      "name": "Attribution 4.0 International (CC BY 4.0)"
+    }
+  ],
+  "expectedUpdateFrequency": "monthly",
+  "userSpecifiedSources": "Aggregated from live job postings collected from applicant tracking systems and employer boards by CloudJobs (https://cloudjobs.io). Methodology: https://cloudjobs.io/methodology. Live feed: https://cloudjobs.io/datasets.",
+  "image": "cover.png",
+  "collaborators": [],
+  "resources": [
+    {
+      "path": "cloudjobs-market-overview.csv",
+      "description": "Point-in-time snapshot of the cloud job market: total open roles, hiring companies, salary statistics, and remote/hybrid/onsite split across all live CloudJobs listings.",
+      "name": "Cloud Job Market Overview",
+      "schema": {
+        "fields": [
+          {
+            "name": "generated_at",
+            "type": "datetime",
+            "description": "Snapshot timestamp (UTC)"
+          },
+          {
+            "name": "total_jobs",
+            "type": "integer",
+            "description": "Total open roles"
+          },
+          {
+            "name": "total_companies",
+            "type": "integer",
+            "description": "Distinct hiring companies"
+          },
+          {
+            "name": "jobs_with_salary",
+            "type": "integer",
+            "description": "Roles with salary data"
+          },
+          {
+            "name": "median_salary_usd",
+            "type": "integer",
+            "description": "Median salary (USD)"
+          },
+          {
+            "name": "avg_salary_usd",
+            "type": "integer",
+            "description": "Average salary (USD)"
+          },
+          {
+            "name": "remote_jobs",
+            "type": "integer",
+            "description": "Remote roles"
+          },
+          {
+            "name": "hybrid_jobs",
+            "type": "integer",
+            "description": "Hybrid roles"
+          },
+          {
+            "name": "onsite_jobs",
+            "type": "integer",
+            "description": "Onsite roles"
+          }
+        ]
+      }
+    },
+    {
+      "path": "cloudjobs-certifications.csv",
+      "description": "Every tracked cloud certification (AWS, Azure, GCP, Kubernetes, CompTIA, and more) with live job counts and average advertised salary in USD.",
+      "name": "Certification Demand & Salaries",
+      "schema": {
+        "fields": [
+          {
+            "name": "cert_id",
+            "type": "string",
+            "description": "Certification ID"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Exam code"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Certification title"
+          },
+          {
+            "name": "provider",
+            "type": "string",
+            "description": "Issuing provider"
+          },
+          {
+            "name": "in_catalog",
+            "type": "boolean",
+            "description": "Matches a certification tracked by CloudJobs (false = raw free-text mention in postings)"
+          },
+          {
+            "name": "job_count",
+            "type": "integer",
+            "description": "Open roles mentioning it"
+          },
+          {
+            "name": "jobs_with_salary",
+            "type": "integer",
+            "description": "Roles with salary data"
+          },
+          {
+            "name": "avg_salary_usd",
+            "type": "integer",
+            "description": "Average salary (USD)"
+          }
+        ]
+      }
+    },
+    {
+      "path": "cloudjobs-technologies.csv",
+      "description": "Cloud and DevOps technologies ranked by live job demand, with average advertised salary in USD for roles mentioning each technology.",
+      "name": "Technology Demand & Salaries",
+      "schema": {
+        "fields": [
+          {
+            "name": "technology",
+            "type": "string",
+            "description": "Technology name"
+          },
+          {
+            "name": "job_count",
+            "type": "integer",
+            "description": "Open roles mentioning it"
+          },
+          {
+            "name": "jobs_with_salary",
+            "type": "integer",
+            "description": "Roles with salary data"
+          },
+          {
+            "name": "avg_salary_usd",
+            "type": "integer",
+            "description": "Average salary (USD)"
+          },
+          {
+            "name": "in_filter_catalog",
+            "type": "boolean",
+            "description": "Present in site filter catalog"
+          }
+        ]
+      }
+    },
+    {
+      "path": "cloudjobs-companies.csv",
+      "description": "Every company with live cloud job postings: role counts, remote policy mix, salary min/median/max, and top technology - linked to each company profile page.",
+      "name": "Hiring Companies & Salaries",
+      "schema": {
+        "fields": [
+          {
+            "name": "company",
+            "type": "string",
+            "description": "Company name"
+          },
+          {
+            "name": "slug",
+            "type": "string",
+            "description": "Company slug"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Company profile URL"
+          },
+          {
+            "name": "job_count",
+            "type": "integer",
+            "description": "Open roles"
+          },
+          {
+            "name": "remote_jobs",
+            "type": "integer",
+            "description": "Remote roles"
+          },
+          {
+            "name": "hybrid_jobs",
+            "type": "integer",
+            "description": "Hybrid roles"
+          },
+          {
+            "name": "onsite_jobs",
+            "type": "integer",
+            "description": "Onsite roles"
+          },
+          {
+            "name": "jobs_with_salary",
+            "type": "integer",
+            "description": "Roles with salary data"
+          },
+          {
+            "name": "salary_min_usd",
+            "type": "integer",
+            "description": "Minimum salary (USD)"
+          },
+          {
+            "name": "salary_median_usd",
+            "type": "integer",
+            "description": "Median salary (USD)"
+          },
+          {
+            "name": "salary_max_usd",
+            "type": "integer",
+            "description": "Maximum salary (USD)"
+          },
+          {
+            "name": "top_technology",
+            "type": "string",
+            "description": "Most-requested technology"
+          },
+          {
+            "name": "latest_posted_at",
+            "type": "datetime",
+            "description": "Most recent posting"
+          }
+        ]
+      }
+    },
+    {
+      "path": "cloudjobs-locations.csv",
+      "description": "Job posting locations ranked by open role count with average advertised salary in USD. Remote appears as its own location.",
+      "name": "Job Locations & Salaries",
+      "schema": {
+        "fields": [
+          {
+            "name": "location",
+            "type": "string",
+            "description": "Location"
+          },
+          {
+            "name": "job_count",
+            "type": "integer",
+            "description": "Open roles"
+          },
+          {
+            "name": "jobs_with_salary",
+            "type": "integer",
+            "description": "Roles with salary data"
+          },
+          {
+            "name": "avg_salary_usd",
+            "type": "integer",
+            "description": "Average salary (USD)"
+          }
+        ]
+      }
+    },
+    {
+      "path": "cloudjobs-jobs.csv",
+      "description": "The complete feed of live cloud job postings: title, company, location, remote flag, salary range, technologies, certifications, and canonical URL.",
+      "name": "Live Job Postings",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Job ID"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Job title"
+          },
+          {
+            "name": "company",
+            "type": "string",
+            "description": "Company"
+          },
+          {
+            "name": "location",
+            "type": "string",
+            "description": "Location"
+          },
+          {
+            "name": "remote",
+            "type": "string",
+            "description": "Remote type"
+          },
+          {
+            "name": "salary_lower_usd",
+            "type": "integer",
+            "description": "Salary lower bound (USD)"
+          },
+          {
+            "name": "salary_upper_usd",
+            "type": "integer",
+            "description": "Salary upper bound (USD)"
+          },
+          {
+            "name": "technologies",
+            "type": "string",
+            "description": "Technologies (comma-separated)"
+          },
+          {
+            "name": "certifications",
+            "type": "string",
+            "description": "Certifications (comma-separated)"
+          },
+          {
+            "name": "posted_at",
+            "type": "string",
+            "description": "Posted date"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Job posting URL"
+          }
+        ]
+      }
+    }
+  ]
+}
